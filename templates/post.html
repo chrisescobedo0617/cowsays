@@ -1,0 +1,15 @@
+<a href="/">Home</a>
+
+<a href="history/">Top Ten</a>
+
+{% if cowsay  %}
+    <pre>
+        <div>{{ cowsay }}</div>
+    </pre>
+{% endif %}
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit!">
+</form>

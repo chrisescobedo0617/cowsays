@@ -1,0 +1,7 @@
+<a href="/">Home</a>
+
+<a href="history">Top Ten</a>
+
+{% for cowsay in topten %}
+    <p>{{ cowsay.text }}</p>
+{%endfor%}
